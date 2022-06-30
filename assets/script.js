@@ -7,7 +7,7 @@ $(".saveBtn").on("click", function() {
     
     var userTask = $(".present").val();
 
-    localStorage.setItem("userTasks", userTask);
+    localStorage.setItem("userTasks", JSON.stringify(userTask));
 
     console.log(userTask);
     window.location.reload();
